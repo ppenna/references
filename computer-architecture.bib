@@ -111,6 +111,42 @@
     year  = {2015}
 }
 
+@article{Cavalcante2020,
+    abstract = { In this article, we present Ara, a 64-bit vector
+                 processor based on the version 0.5 draft of RISC-V's vector
+                 extension, implemented in GlobalFoundries 22FDX fully
+                 depleted silicon-on-insulator (FD-SOI) technology. Ara's
+                 microarchitecture is scalable, as it is composed of a set of
+                 identical lanes, each containing part of the processor's
+                 vector register file and functional units. It achieves up to
+                 97% floating-point unit (FPU) utilization when running a 256
+                 × 256 double-precision matrix multiplication on 16 lanes.
+                 Ara runs at more than 1 GHz in the typical corner (TT/0.80
+                 V/25 °C), achieving a performance up to 33
+                 DP-GFLOPS. In terms of energy efficiency, Ara achieves up to
+                 41 DP-GFLOPS W -1 under the same conditions, which is
+                 slightly superior to similar vector processors found in the
+                 literature. An analysis on several vectorizable linear
+                 algebra computation kernels for a range of different matrix
+                 and vector sizes gives insight into performance limitations
+                 and bottlenecks for vector processors and outlines
+                 directions to maintain high energy efficiency even for small
+                 matrix sizes where the vector architecture achieves
+                 suboptimal utilization of the available FPUs.
+    },
+    author  = { Cavalcante, Matheus and Schuiki, Fabian and Zaruba, Florian and Schaffner, Michael and Benini, Luca },
+    doi     = { 10.1109/TVLSI.2019.2950087 },
+    issn    = { 1063-8210 },
+    journal = { IEEE Transactions on Very Large Scale Integration (VLSI) Systems },
+    month   = { feb },
+    number  = { 2 },
+    pages   = { 530--543 },
+    title   = { {Ara: A 1-GHz+ Scalable and Energy-Efficient RISC-V Vector Processor With Multiprecision Floating-Point Support in 22-nm FD-SOI} },
+    url     = { https://ieeexplore.ieee.org/document/8918510/ },
+    volume  = { 28 },
+    year    = { 2020 }
+}
+
 @article{Davidson2018,
     author    = { Davidson, Scott and
                   Xie, Shaolin and
@@ -189,6 +225,65 @@
     title     = { Guaranteed Services of the NoC of a Manycore Processor },
     url       = { http://dl.acm.org/citation.cfm?doid=2685342.2685344 },
     year      = { 2014 }
+}
+
+@article{Flynn1972,
+	abstract = { A hierarchical model of computer organizations is
+				 developed, based on a tree model using request/service type
+				 resources as nodes. Two aspects of the model are
+				 distinguished: logical and physical. General parallel- or
+				 multiple-stream organizations are examined as to type and
+				 effectiveness-especially regarding intrinsic logical
+				 difficulties. The overlapped simplex processor (SISD) is
+				 limited by data dependencies. Branching has a particularly
+				 degenerative effect. The parallel processors
+				 [single-instruction stream-multiple-data stream (SIMD)] are
+				 analyzed. In particular, a nesting type explanation is
+				 offered for Minsky's conjecture-the performance of a
+				 parallel processor increases as log M instead of M (the
+				 number of data stream processors).
+				 Multiprocessors (MIMD) are subjected to a saturation
+				 syndrome based on general communications lockout.
+				 Simplified queuing models indicate that saturation
+				 develops when the fraction of task time spent locked out
+				 (L/E) approaches 1/n, where n is the number of
+				 processors. Resources sharing in multiprocessors can be
+				 used to avoid several other classic organizational
+				 problems.
+	},
+	author  = { Flynn, Michael J. },
+	doi     = { 10.1109/TC.1972.5009071 },
+	issn    = { 0018-9340 },
+	journal = { IEEE Transactions on Computers },
+	month   = { sep },
+	number  = { 9 },
+	pages   = { 948--960 },
+	title   = { {Some Computer Organizations and Their Effectiveness} },
+	url     = { http://ieeexplore.ieee.org/document/5009071/ },
+	volume  = { C-21 },
+	year    = { 1972 }
+}
+
+@article{Foley2017,
+    abstract = { This article introduces Nvidia's high-performance Pascal
+                 GPU. GP100 features in-package high-bandwidth memory, support
+                 for efficient FP16 operations, unified memory, and
+                 instruction preemption, and incorporates Nvidia's NVLink
+                 I/O for high-bandwidth connections between GPUS and
+                 between GPUS and CPUs.
+    },
+    author    = { Foley, Denis and Danskin, John },
+    doi       = { 10.1109/MM.2017.37 },
+    issn      = { 02721732 },
+    journal   = { IEEE Micro },
+    month     = { mar },
+    number    = { 2 },
+    pages     = { 7--17 },
+    publisher = { Elsevier Ltd },
+    title     = { {Ultra-Performance Pascal GPU and NVLink Interconnect} },
+    url       = { http://dx.doi.org/10.1016/j.sse.2015.11.015 http://ieeexplore.ieee.org/document/7924274/ },
+    volume    = { 37 },
+    year      = { 2017 }
 }
 
 @article{Fu2016,
@@ -331,6 +426,39 @@
     year    = { 2011 }
 }
 
+@inproceedings{Ishigaki2015,
+	abstract = {Three-dimensional (3D) numerical simulation is an
+				indispensable technique for various analyses of physical
+				phenomena, but it generally requires numerous computation.
+				In this paper, we propose an FPGA-based accelerator for 3D
+				numerical simulations and focus on acceleration of the 3D
+				finite-difference time-domain (FDTD) method. This
+				accelerator consists of a 2D single instruction multiple
+				data (SIMD) array processor, and it can execute 3D parallel
+				computing with little data transfer overhead by applying
+				virtual processing-elements cuboid (VPEC) with synchronous
+				shift data transfer. We demonstrate that the experimental
+				hardware implemented on an Altera Stratix V FPGA
+				(5SGSMD5K2F40C2N) is 3.1 times faster than parallel
+				computing on the NVIDIA Tesla C2075, and it reaches a 94.57%
+				operating rate of the calculation units for the computation
+				of the 3D FDTD method. The proposed accelerator is suitable
+				for multi-chip composition.
+	},
+	address   = { Lisbon, Portugal },
+	author    = { Ishigaki, Yutaro and Tomioka, Yoichi and Shibata, Tsugumichi and Kitazawa, Hitoshi },
+	booktitle = { International Symposium on Circuits and Systems (ISCAS) },
+	doi       = { 10.1109/ISCAS.2015.7168789 },
+	isbn      = { 978-1-4799-8391-9 },
+	month     = { may },
+	pages     = { 938--941 },
+	publisher = { IEEE },
+	series    = { ISCAS '15 },
+	title     = { {An FPGA implementation of 3D numerical simulations on a 2D SIMD array processor} },
+	url       = { http://ieeexplore.ieee.org/document/7168789/ },
+	year      = { 2015 }
+}
+
 @inproceedings{Krasnov2007,
     author    = {Krasnov, Alex and Schultz, Andrew and Wawrzynek, John and Gibeling, Greg and Droz, Pierre-Yves},
     booktitle = {International Conference on Field Programmable Logic and Applications (FPL)},
@@ -422,6 +550,56 @@
     year    = { 2017 }
 }
 
+@article{Peleg1996,
+    abstract = { Designed to accelerate multimedia and communications
+                 software, MMX technology improves performance by introducing
+                 data types and instructions to the IA that exploit the
+                 parallelism in these applications. MMX technology extends
+                 the Intel architecture (IA) to improve the performance of
+                 multimedia, communications, and other numeric-intensive
+                 applications. It uses a SIMD (single-instruction,
+                 multiple-data) technique to exploit the parallelism
+                 inherent in many algorithms, producing full application
+                 performance of 1.5 to 2 times faster than the same
+                 applications run on the same processor without MMX. The
+                 extension also maintains full compatibility with existing IA
+                 microprocessors, operating systems, and applications while
+                 providing new instructions and data types that applications
+                 can use to achieve a higher level of performance on the host
+                 CPU.
+    },
+    author  = { Peleg, A. and Weiser, U. },
+    doi     = { 10.1109/40.526924 },
+    issn    = { 02721732 },
+    journal = { IEEE Micro },
+    number  = { 4 },
+    pages   = { 42--50 },
+    title   = { {MMX technology extension to the Intel architecture} },
+    url     = { http://ieeexplore.ieee.org/document/526924/ },
+    volume  = { 16 },
+    year    = { 1996 }
+}
+
+@inproceedings{Ramey2011a,
+    abstract = { This article consists of a collection of slides from
+                 the author's conference presentation on the special features,
+                 system design, processing capabilities, and targeted markets for
+                 Tilera's TILE-Gz100 ManyCore processor family of products.
+    },
+    address   = { Stanford },
+    author    = { Ramey, Carl },
+    booktitle = { Hot Chips Symposium (HCS) },
+    doi       = { 10.1109/HOTCHIPS.2011.7477491 },
+    isbn      = { 978-1-4673-8877-1 },
+    month     = { aug },
+    pages     = { 1--21 },
+    publisher = { IEEE },
+    series    = { HCS '11} ,
+    title     = { {TILE-Gx100 ManyCore processor: Acceleration interfaces and architecture} },
+    url       = { http://ieeexplore.ieee.org/document/7477491/ },
+    year      = { 2011 }
+}
+
 @article{Rossi2017,
     author    = { Rossi, Davide and
                   Pullini, Antonio and
@@ -447,6 +625,54 @@
     url       = { http://ieeexplore.ieee.org/document/8065010/ },
     volume    = { 37 },
     year      = { 2017 }
+}
+
+@article{Shi2014,
+    abstract = { This paper proposes a vision chip hybrid architecture
+                 with dynamically reconfigurable processing element (PE) array
+                 processor and self-organizing map (SOM) neural network. It
+                 integrates a high speed CMOS image sensor, three von
+                 Neumann-type processors, and a non-von Neumann-type
+                 bio-inspired SOM neural network. The processors consist of a
+                 pixel-parallel PE array processor with O(N×N) parallelism, a
+                 row-parallel row-processor (RP) array processor with O(N)
+                 parallelism and a thread-parallel dual-core microprocessor
+                 unit (MPU) with O(2) parallelism. They execute low-, mid-
+                 and high-level image processing, respectively. The SOM
+                 network speeds up high-level processing in pattern
+                 recognition tasks by O(N/4×N/4), which improves the chip
+                 performance remarkably. The SOM network can be dynamically
+                 reconfigured from the PE array to largely save chip area. A
+                 prototype chip with a 256 × 256 image sensor, a
+                 reconfigurable 64 × 64 PE array processor/16 × 16 SOM
+                 network, a 64 × 1 RP array processor and a dual-core 32-bit
+                 MPU was implemented in a 0.18 $\mu$m CMOS image sensor
+                 process. The chip can perform image capture and
+                 various-level image processing at a high speed and in
+                 flexible fashion. Various complicated applications including
+                 M-S functional solution, horizon estimation, hand gesture
+                 recognition, face recognition are demonstrated at high speed
+                 from several hundreds to >1000 fps.
+    },
+    author  = { Shi, Cong and
+                Yang, Jie and
+                Han, Ye and
+                Cao, Zhongxiang and
+                Qin, Qi and
+                Liu, Liyuan and
+                Wu, Nan-Jian and
+                Wang, Zhihua
+    },
+    doi     = { 10.1109/JSSC.2014.2332134 },
+    issn    = { 0018-9200 },
+    journal = { IEEE Journal of Solid-State Circuits (JSSC) },
+    month   = { sep },
+    number  = { 9 },
+    pages   = { 2067--2082 },
+    title   = { {A 1000 fps Vision Chip Based on a Dynamically Reconfigurable Hybrid Architecture Comprising a PE Array Processor and Self-Organizing Map Neural Network} },
+    url     = { https://ieeexplore.ieee.org/document/6853420 },
+    volume  = { 49 },
+    year    = { 2014 }
 }
 
 @inproceedings{Wallentowitz2012,
@@ -483,6 +709,60 @@
     title         = { {Open Tiled Manycore System-on-Chip} },
     url           = { http://arxiv.org/abs/1304.5081 },
     year          = { 2013 }
+}
+
+@misc{Yoshida2018,
+    address   = { Cupertino, USA },
+    author    = { Yoshida, Toshio },
+    booktitle = { Hot Chips Symposium (HCS) },
+    pages     = { 21 },
+    title     = { {Fujitsu High Performance CPU for the Post-K Computer} },
+    year      = { 2018 }
+}
+
+@article{Zaruba2020,
+    abstract = { Data-parallel problems, commonly found in data
+                 analytics, machine learning, and scientific computing demand
+                 ever growing floating-point operations per second under
+                 tight area- and energy-efficiency constraints.
+                 Application-specific architectures and accelerators, while
+                 efficient at a given task, are hard to adjust to algorithmic
+                 changes. In this work, we present Manticore, a
+                 general-purpose, ultra-efficient, RISC-V, chiplet-based
+                 architecture for data-parallel floating-point workloads. We
+                 have manufactured a 9mm^2 prototype of the chiplet's
+                 computational core in Globalfoundries 22nm FD-SOI process
+                 and demonstrate more than 2.5x improvement in energy
+                 efficiency on floating-point intensive workloads compared to
+                 high performance compute engines (CPUs and GPUs), despite
+                 their more advanced FinFET process. The prototype contains
+                 two 64-bit, application-class RISC-V Ariane management cores
+                 that run a full-fledged Linux OS. The compute capability at
+                 high energy and area efficiency is provided by Snitch
+                 clusters. Each cluster contains eight small (20kGE) 32-bit
+                 integer RISC-V cores, each controlling a large
+                 double-precision floating-point unit (120kGE). Each core
+                 supports two custom RISC-V ISA extensions: FREP and SSR. The
+                 SSR extension elides explicit load and store instructions by
+                 encoding them as register reads and writes. The FREP
+                 extension mostly decouples the integer core from the FPU by
+                 allowing a sequence buffer to issue instructions to the FPU
+                 independently. Both extensions allow the tiny, single-issue,
+                 integer core to saturate the instruction bandwidth of the FPU
+                 and achieve FPU utilization above 90%, with more than 80% of
+                 core area dedicated to the FPU.
+    },
+    archivePrefix = { arXiv },
+    arxivId       = { 2008.06502 },
+    author        = { Zaruba, Florian and Schuiki, Fabian and Benini, Luca },
+    doi           = { 10.1109/MM.2020.3045564 },
+    eprint        = { 2008.06502 },
+    issn          = { 0272-1732 },
+    journal       = { IEEE Micro },
+    pages         = { 1--1 },
+    title         = { {Manticore: A 4096-core RISC-V Chiplet Architecture for Ultra-Efficient Floating-point Computing} },
+    url           = { https://ieeexplore.ieee.org/document/9296802/ },
+    year          = { 2020 }
 }
 
 @article{Zheng2015,
