@@ -556,5 +556,25 @@
                 Henrique Freitas and
                 Jean-François Méhaut
     },
-    abstract = {Lightweight manycore processors deliver high performance and scalability by bundling in a single chip hundreds of low-power cores, a distributed memory architecture and Networks-on-Chip (NoCs). Operating Systems (OSes) for these processors feature a distributed design, in which a communication layer enables kernels to exchange information and interoperate. Currently, this communication infrastructure is based on mailboxes, which enable fixed-size message exchanges with low latency. However, this solution is suboptimal because it can neither fully exploit the NoC nor efficiently handle the diversity of OS communication protocols. We propose an Inter-Kernel Communication (IKC) facility that exposes two kernel-level communication abstractions in addition to mailboxes: syncs, for enabling a process to signal and unlock another process remotely, and portals, for handling dense data transfers with high bandwidth. We implemented the proposed facility in Nanvix, the only open-source distributed OS that runs on a baremetal lightweight manycore, and we evaluated our solution on a 288-core processor (Kalray MPPA-256). Our results showed that our IKC facility achieves up to 16.87× and 1.68× better performance than a mailbox-only solution, in synchronization and dense data transfers, respectively.}
+    abstract = {
+        Lightweight manycore processors deliver high performance and scalability
+        by bundling in a single chip hundreds of low-power cores, a distributed
+        memory architecture and Networks-on-Chip (NoCs). Operating Systems
+        (OSes) for these processors feature a distributed design, in which a
+        communication layer enables kernels to exchange information and
+        interoperate. Currently, this communication infrastructure is based on
+        mailboxes, which enable fixed-size message exchanges with low latency.
+        However, this solution is suboptimal because it can neither fully
+        exploit the NoC nor efficiently handle the diversity of OS communication
+        protocols.  We propose an Inter-Kernel Communication (IKC) facility that
+        exposes two kernel-level communication abstractions in addition to
+        mailboxes: syncs, for enabling a process to signal and unlock another
+        process remotely, and portals, for handling dense data transfers with
+        high bandwidth. We implemented the proposed facility in Nanvix, the only
+        open-source distributed OS that runs on a baremetal lightweight
+        manycore, and we evaluated our solution on a 288-core processor (Kalray
+        MPPA-256). Our results showed that our IKC facility achieves up to
+        16.87× and 1.68× better performance than a mailbox-only solution, in
+        synchronization and dense data transfers, respectively.
+    }
 }
