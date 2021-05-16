@@ -622,6 +622,45 @@
     url    = {https://www.open-mpi.org}
 }
 
+@article{Pereira2015,
+    abstract = { Summary The use of Graphics Processing Units (GPUs) for
+                 high-performance computing has gained growing momentum in
+                 recent years.  Unfortunately, GPU-programming platforms like
+                 Compute Unified Device Architecture (CUDA) are complex, user
+                 unfriendly, and increase the complexity of developing
+                 high-performance parallel applications. In addition, runtime
+                 systems that execute those applications often fail to fully
+                 utilize the parallelism of modern CPU-GPU systems. Typically,
+                 parallel kernels run entirely on the most powerful device
+                 available, leaving other devices idle. These observations
+                 sparked research in two directions: (1) high-level approaches
+                 to software development for GPUs, which strike a balance
+                 between performance and ease of programming; and (2) task
+                 partitioning to fully utilize the available devices. In this
+                 paper, we propose a framework, called PSkel, that provides a
+                 single high-level abstraction for stencil programming on
+                 heterogeneous CPU-GPU systems, while allowing the programmer to
+                 partition and assign data and computation to both CPU and GPU.
+                 Our current implementation uses parallel skeletons to
+                 transparently leverage Intel Threading Building Blocks (Intel
+                 Corporation, Santa Clara, CA, USA) and NVIDIA CUDA (Nvidia
+                 Corporation, Santa Clara, CA, USA). In our experiments, we
+                 observed that parallel applications with task partitioning can
+                 improve average performance by up to 76\% and 28\% compared
+                 with CPU-only and GPU-only parallel applications, respectively.
+    },
+    author   = { Pereira, Alyson D. and Ramos, Luiz and Góes, Luís F. W. },
+    title    = { PSkel: A stencil programming framework for CPU-GPU systems },
+    journal  = { Concurrency and Computation: Practice and Experience },
+    volume   = { 27 },
+    number   = { 17 },
+    pages    = { 4938-4953 },
+    doi      = { https://doi.org/10.1002/cpe.3479 },
+    url      = { https://onlinelibrary.wiley.com/doi/abs/10.1002/cpe.3479 },
+    eprint   = { https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpe.3479 },
+    year     = { 2015 }
+}
+
 @inproceedings{Quan2015,
     author    = { Minh Quan Ho and
                   Bernard Tourancheau and
