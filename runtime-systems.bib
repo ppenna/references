@@ -195,6 +195,43 @@
     year      = {2011}
 }
 
+@incollection{CompresUrena2011,
+    abstract    = { The Single-chip Cloud Computer (SCC) is an experimental
+                    processor created by Intel Labs. It is a distributed memory
+                    architecture that provides shared memory possibilities and
+                    an on die Message Passing Buffer (MPB). This paper presents
+                    an MPI implementation (RCKMPI) that uses an efficient mix of
+                    MPB and DDR3 shared memory for low level communication.  The
+                    on die buffer found in the SCC provides higher bandwidth and
+                    lower latency than the available shared memory. In spite of
+                    this, message passing can be faster through DDR3, due to
+                    protocol overheads related to the small size of the MPB and
+                    the necessity to split and reassemble large packages,
+                    together with the possibility that the data is not available
+                    in the cache.  These overheads take over after certain
+                    message sizes, requiring run time decisions with regards to
+                    which type of buffers to use, in order to achieve higher
+                    performance. In the current implementation, the decision is
+                    based on remaining bytes to transfer from in transit
+                    packets. MPI benchmarks are shown to demonstrate that the
+                    use of both types of buffers results in equal or lower
+                    transmission times than when communicating through the on
+                    die buffer alone.
+    },
+    author      = { {Compr{\'{e}}s Ure{\~{n}}a}, Isa{\'{i}}as A. and
+                     Riepen, Michael and
+                     Konow, Michael
+    },
+    doi         = { 10.1007/978-3-642-24449-0_24 },
+    isbn        = { Online ISBN 978-3-642-24449-0 },
+    pages       = { 208--217 },
+    publisher   = { Springer },
+    title       = { {RCKMPI – Lightweight MPI Implementation for Intel's Single-chip Cloud Computer (SCC)} },
+    url         = { http://link.springer.com/10.1007/978-3-642-24449-0_24 },
+    year        = { 2011 }
+}
+
+
 @article{Dagum1998,
     author  = {Dagum, Leonardo and Menon, Ramesh},
     doi     = {10.1109/99.660313},
