@@ -63,6 +63,43 @@
     year    = {1991}
 }
 
+@article{Barnes1986,
+    abstract  = { Until recently the gravitational N-body problem has been
+                  modelled numerically either by direct integration, in which
+                  the computation needed increases as N 2, or by an iterative
+                  potential method in which the number of operations grows as N
+                  log N. Here we describe a novel method of directly calculating
+                  the force on N bodies that grows only as N log N. The
+                  technique uses a tree-structured hierarchical subdivision of
+                  space into cubic cells, each of which is recursively divided
+                  into eight subcells whenever more than one particle is found
+                  to occupy the same cell. This tree is constructed anew at
+                  every time step, avoiding ambiguity and tangling.  Advantages
+                  over potential-solving codes are: accurate local interactions;
+                  freedom from geometrical assumptions and restrictions; and
+                  applicability to a wide class of systems, including
+                  (proto-)planetary, stellar, galactic and cosmological ones.
+                  Advantages over previous hierarchical tree-codes include
+                  simplicity and the possibility of rigorous analysis of error.
+                  Although we concentrate here on stellar dynamical
+                  applications, our techniques of efficiently handling a large
+                  number of long-range interactions and concentrating
+                  computational effort where most needed have potential
+                  applications in other areas of astrophysics as well.
+    },
+    author    = { Barnes, Josh and Hut, Piet },
+    doi       = { 10.1038/324446a0 },
+    issn      = { 0028-0836 },
+    journal   = { Nature },
+    number    = { 6096 },
+    pages     = { 446--449 },
+    publisher = { Nature Publishing Group },
+    title     = { {A hierarchical O(N log N) force-calculation algorithm} },
+    url       = { http://www.nature.com/doifinder/10.1038/324446a0 },
+    volume    = { 324 },
+    year      = { 1986 }
+}
+
 @article{Hashemi2012,
     author    = { Hashemi, Matin and
                   Foroozannejad, Mohammad H. and
@@ -97,4 +134,43 @@
     url       = {http://portal.acm.org/citation.cfm?doid=103727.103729},
     volume    = {9},
     year      = {1991}
+}
+
+@inproceedings{Merrill2012,
+    abstract   = { Breadth-first search (BFS) is a core primitive for graph
+                   traversal and a basis for many higher-level graph analysis
+                   algorithms. It is also representative of a class of parallel
+                   computations whose memory accesses and work distribution are
+                   both irregular and data-dependent. Recent work has
+                   demonstrated the plausibility of GPU sparse graph traversal,
+                   but has tended to focus on asymptotically inefficient
+                   algorithms that perform poorly on graphs with non-trivial
+                   diameter. We present a BFS parallelization focused on
+                   fine-grained task management constructed from efficient
+                   prefix sum that achieves an asymptotically optimal O(|V|+|E|)
+                   work complexity. Our implementation delivers excellent
+                   performance on diverse graphs, achieving traversal rates in
+                   excess of 3.3 billion and 8.3 billion traversed edges per
+                   second using single and quad-GPU configurations,
+                   respectively. This level of performance is several times
+                   faster than state-of-the-art implementations both CPU and GPU
+                   platforms.
+    },
+    address    = { New York, USA },
+    author     = { Merrill, Duane and
+                   Garland, Michael and
+                   Grimshaw, Andrew and
+                   Merrill, Duane and
+                   Garland, Michael and
+                   Grimshaw, Andrew
+    },
+    booktitle  = { ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming (PPoPP ) },
+    doi        = { 10.1145/2145816.2145832 },
+    isbn       = { 9781450311601 },
+    number     = { 8 },
+    pages      = { 117 },
+    publisher  = { ACM Press },
+    title      = { {Scalable GPU Graph Traversal} },
+    volume     = { 47 },
+    year       = { 2012 }
 }
